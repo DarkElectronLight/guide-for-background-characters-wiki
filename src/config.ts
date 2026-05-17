@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://darkelectronlight.github.io/gfbc-wiki-astro/", // replace this with your deployed domain
   author: "NA",
   desc: "A Fan Wiki for A Guide to Background Characters",
-  title: "Beck Does Things",
+  title: "GFBC Wiki",
   ogImage: "logo.jpg",
   profile: "https://github.com/DarkElectronLight/",
   lightAndDarkMode: true,

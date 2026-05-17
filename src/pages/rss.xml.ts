@@ -9,7 +9,7 @@ export async function GET() {
   const sortedPosts = getSortedPosts(posts);
   return rss({
 
-    title: "Beck's Does Things",
+    title: "A Guide For Background Characters Wiki",
     description: "these things",
     site: SITE.website,
       items: sortedPosts.map(({ data, id, filePath }) => ({
