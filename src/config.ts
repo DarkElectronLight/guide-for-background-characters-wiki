@@ -1,8 +1,8 @@
 export const SITE = {
-  website: "https://darkelectronlight.github.io/gfbc-wiki-astro/", // replace this with your deployed domain
+  website: "https://darkelectronlight.github.io/guide-for-background-characters-wiki/", // replace this with your deployed domain
   author: "NA",
   desc: "A Fan Wiki for A Guide to Background Characters",
-  title: "GFBC Wiki",
+  title: "guide-for-background-characters-wiki Wiki",
   ogImage: "logo.jpg",
   profile: "https://github.com/DarkElectronLight/",
   lightAndDarkMode: true,
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/DarkElectronLight/gfbc-wiki-astro/edit/master/",
+    url: "https://github.com/DarkElectronLight/guide-for-background-characters-wiki/edit/master/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"

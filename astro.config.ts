@@ -16,7 +16,7 @@ import { SITE } from "./src/config";
 export default defineConfig({
   // site: SITE.website,
   site: "https://DarkElectronLight.github.io",
-  base: "/gfbc-wiki-astro",
+  // base: "/guide-for-background-characters-wiki",
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
