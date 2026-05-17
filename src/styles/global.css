@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@import "./typography.css";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+:root,
+html[data-theme="light"] {
+  --background: #a5f1e7;
+  --foreground: #1d0549;
+  --accent: #520e6d;
+  --muted: #12e61c;
+  --border: #e4d507;
+}
+
+html[data-theme="dark"] {
+  --background: #26292C;
+  --foreground: #F8F8F0;
+  --accent: #fdb2fd;
+  --muted: #66D9EF;
+  --border: #7dd8fc;
+}
+
+/* html[data-theme="dark"] {
+  --background: #26292C;
+  --foreground: #F8F8F0;
+  --accent: #E6DB74;
+  --muted: #66D9EF;
+  --border: #F92672;
+} */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-accent/75;
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-muted) transparent;
+  }
+  html {
+    @apply overflow-y-scroll scroll-smooth;
+  }
+  body {
+    @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+  }
+  a,
+  button {
+    @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  section,
+  footer {
+    @apply mx-auto max-w-app px-4;
+  }
+  ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  }
+}
+
+@utility max-w-app {
+  @apply max-w-3xl;
+}
+
+.active-nav {
+  @apply underline decoration-wavy decoration-2 underline-offset-4;
+}
+
+/* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 1rem;
+}
+
+ul {
+  border-style: dashed;
+}
