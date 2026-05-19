@@ -1,5 +1,5 @@
 export const SITE = {
-  website: "https://darkelectronlight.github.io", // replace this with your deployed domain
+  website: "https://darkelectronlight.github.io/guide-for-background-characters-wiki", // replace this with your deployed domain
   author: "NA",
   desc: "A Fan Wiki for A Guide to Background Characters",
   title: "guide-for-background-characters-wiki Wiki",
