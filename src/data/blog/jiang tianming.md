@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2023-11-11T22:07:00Z
+pubDatetime: 2026-05-19T16:09:14Z
 modDatetime: 
 title: Jiang Tianming
 postSlug: jiang-tianming
@@ -8,6 +8,8 @@ draft: false
 tags:
   - character
   - endless ability academy
-description: jiang Tianming
-enclosure: ../../assets/images/subei.jpg
+  - class s
+  - student
+description: The protagonist of 'King of Abilities' and a student of Class S
+enclosure: ../../assets/images/jiangtianming.jpg
 ---

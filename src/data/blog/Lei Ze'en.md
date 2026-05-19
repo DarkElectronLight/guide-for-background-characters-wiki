@@ -1,15 +1,14 @@
 ---
 pubDatetime: 2026-05-19T16:09:14Z
 modDatetime: 
-title: Wu Mingbai 
-postSlug: Wu-Mingbai 
+title: Lei Ze'en 
+postSlug: Lei-Zeen 
 featured: false
 draft: false
 tags:
   - character
   - endless ability academy
   - class s
-  - student
-description: A student of Class S
-enclosure: ../../assets/images/Wu Mingbai.jpg
+description: A teacher at Endless Ability Academy
+enclosure: ../../assets/images/Lei Ze'en.jpg
 ---

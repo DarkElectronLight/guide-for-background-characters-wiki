@@ -1,8 +1,8 @@
 ---
 pubDatetime: 2026-05-19T16:09:14Z
 modDatetime: 
-title: Wu Mingbai 
-postSlug: Wu-Mingbai 
+title: Ai Baozhu
+postSlug: Ai-Baozhu 
 featured: false
 draft: false
 tags:

@@ -1,8 +1,8 @@
 ---
 pubDatetime: 2026-05-19T16:09:14Z
 modDatetime: 
-title: Wu Mingbai 
-postSlug: Wu-Mingbai 
+title: Lan Subing
+postSlug: Lan-Subing 
 featured: false
 draft: false
 tags:
@@ -11,5 +11,5 @@ tags:
   - class s
   - student
 description: A student of Class S
-enclosure: ../../assets/images/Wu Mingbai.jpg
+enclosure: ../../assets/images/Lan Subing.jpg
 ---

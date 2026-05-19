@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2023-11-11T22:07:00Z
+pubDatetime: 2026-05-19T16:09:14Z
 modDatetime: 
 title: Su Bei
 postSlug: su-bei
@@ -8,6 +8,8 @@ draft: false
 tags:
   - character
   - endless ability academy
-description: Su Bei
+  - class s
+  - student
+description: The Main Character
 enclosure: ../../assets/images/subei.jpg
 ---

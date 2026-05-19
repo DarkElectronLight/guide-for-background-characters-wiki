@@ -1,8 +1,8 @@
 ---
 pubDatetime: 2026-05-19T16:09:14Z
 modDatetime: 
-title: Wu Mingbai 
-postSlug: Wu-Mingbai 
+title: Li Shu
+postSlug: Li-Shu 
 featured: false
 draft: false
 tags:
@@ -10,6 +10,6 @@ tags:
   - endless ability academy
   - class s
   - student
-description: A student of Class S
-enclosure: ../../assets/images/Wu Mingbai.jpg
+description: A student of Class S 
+enclosure: ../../assets/images/Li Shu.jpg
 ---
