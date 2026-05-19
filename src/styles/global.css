@@ -5,19 +5,19 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #a5f1e7;
+  --background: #eef3b1;
   --foreground: #1d0549;
   --accent: #520e6d;
-  --muted: #12e61c;
-  --border: #e4d507;
+  --muted: #7d1eaa;
+  --border: #9e07e4;
 }
 
 html[data-theme="dark"] {
-  --background: #26292C;
+  --background: #17033d;
   --foreground: #F8F8F0;
-  --accent: #fdb2fd;
-  --muted: #66D9EF;
-  --border: #7dd8fc;
+  --accent: #ffdd03;
+  --muted: #9111e7;
+  --border: #ffdd03;
 }
 
 /* html[data-theme="dark"] {
@@ -51,6 +51,8 @@ html[data-theme="dark"] {
   a,
   button {
     @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+    text-decoration: underline;
+
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
@@ -61,7 +63,7 @@ html[data-theme="dark"] {
     @apply mx-auto max-w-app px-4;
   }
   ul {
-  list-style-type: disc;
+  list-style-type: square;
   margin-left: 20px;
   }
 }

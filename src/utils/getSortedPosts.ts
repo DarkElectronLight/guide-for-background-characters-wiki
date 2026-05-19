@@ -16,6 +16,15 @@ const getSortedPosts = (posts: CollectionEntry<"blog">[]) => {
     );
 };
 
+// const getSortedPosts = (posts: CollectionEntry<"blog">[]) => {
+//   return posts
+//     .filter(postFilter)
+//     .sort(
+//       (a, b) =>
+//         a.data.title.toLowerCase().localeCompare(b.data.title.toLowerCase())
+//     );
+// };
+
 // const getSortedPostsMusic = (posts: CollectionEntry<"music">[]) => {
 //   return posts
 //     .filter(postFilterMusic)

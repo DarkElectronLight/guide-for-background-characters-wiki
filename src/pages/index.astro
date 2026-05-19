@@ -8,6 +8,7 @@ import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
 import Hr from "@/components/Hr.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
+import getTitleSortedPosts from "@/utils/getTitleSortedPosts";
 import getPostsByTag from "@/utils/getPostsByTag";
 import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
@@ -21,12 +22,13 @@ import { SOCIALS } from "@/constants";
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
+const titleSortedPosts = getTitleSortedPosts(posts)
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
-const musicPosts = getPostsByTag(posts, "music");
-const artPosts = getPostsByTag(posts, "art");
-const writingPosts = getPostsByTag(posts, "writing");
+const characterPosts = getPostsByTag(posts, "character").filter(({ data }) => data.featured);
+const arcPosts = getPostsByTag(posts, "arc").filter(({ data }) => data.featured);
+const organisationPosts = getPostsByTag(posts, "organisation").filter(({ data }) => data.featured);
 
 
 
@@ -41,25 +43,8 @@ const writingPosts = getPostsByTag(posts, "writing");
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
         A Guide for Background Characters to Survive in a Manga
       </h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="inline-block"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <IconRss
-          width={20}
-          height={20}
-          class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
-        />
-        <span class="sr-only">RSS Feed</span>
-      </a>
-
-
       <p>
         A Guide for Background Characters to Survive in a Manga is a web novel originally published on <a href="https://www.jjwxc.net/onebook.php?novelid=5716806">jjwxc</a> and translated on <a href="https://fenrirealm.com/series/a-guide-for-background-characters-to-survive-in-a-manga">fenrirealm.com</a>. It's <a href="https://www.novelupdates.com/series/a-guide-for-background-characters-to-survive-in-a-manga/">novelupdates</a> page is here.
-
 The novel consists of 365 chapters. 
       </p>
       <br>
@@ -74,7 +59,7 @@ The novel consists of 365 chapters.
           width={20}
           height={20}
           class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
-        /> Feed
+        />
         <span class="sr-only">RSS Feed</span>
       </a>
       <br>
@@ -121,66 +106,66 @@ The novel consists of 365 chapters.
             )}
           </ul>
         </section>
-        {musicPosts.length > 0 && <Hr />}
+        {characterPosts.length > 0 && <Hr />}
         </>
       )
     }
 <Hr />
     {
-      musicPosts.length > 0 && (
+      characterPosts.length > 0 && (
         <>
           <section id="featured" class="pt-12 pb-6">
-            <h2 class="text-2xl font-semibold tracking-wide">Music</h2> 
+            <h2 class="text-2xl font-semibold tracking-wide">Characters</h2> 
             <ul>
-            {musicPosts.map(
+            {characterPosts.map(
               (data, index) =>
                 index < SITE.postPerIndex && <Card variant="h3" {...data} />
             )}
             </ul>
           <LinkButton href="/tags/music">
-          All Music
+          Characters
           <IconArrowRight class="inline-block rtl:-rotate-180" />
           </LinkButton>
           </section>
-                  {artPosts.length > 0 && <Hr />}
+                  {arcPosts.length > 0 && <Hr />}
 
         </>
       )
     }
         {
-      artPosts.length > 0 && (
+      arcPosts.length > 0 && (
         <>
           <section id="featured" class="pt-12 pb-6">
             <h2 class="text-2xl font-semibold tracking-wide">Art</h2>
             <ul>
-            {artPosts.map(
+            {arcPosts.map(
               (data, index) =>
                 index < SITE.postPerIndex && <Card variant="h3" {...data} />
             )}
             </ul>
                       <LinkButton href="/tags/art">
-          All Art
+          Arcs
           <IconArrowRight class="inline-block rtl:-rotate-180" />
           </LinkButton>
           </section>
-                  {writingPosts.length > 0 && <Hr />}
+                  {organisationPosts.length > 0 && <Hr />}
 
         </>
       )
     }
         {
-      writingPosts.length > 0 && (
+      organisationPosts.length > 0 && (
         <>
           <section id="featured" class="pt-12 pb-6">
             <h2 class="text-2xl font-semibold tracking-wide">Writing</h2>
             <ul>
-            {writingPosts.map(
+            {organisationPosts.map(
               (data, index) =>
                 index < SITE.postPerIndex && <Card variant="h3" {...data} />
             )}
             </ul>
                       <LinkButton href="/tags/writing">
-          All Writing
+          Organisations
           <IconArrowRight class="inline-block rtl:-rotate-180" />
           </LinkButton>
           </section>

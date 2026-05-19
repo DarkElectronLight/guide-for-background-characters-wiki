@@ -91,6 +91,20 @@ const prevPost = currentPostIndex !== 0 ? allPosts[currentPostIndex - 1] : null;
 const nextPost =
   currentPostIndex !== allPosts.length ? allPosts[currentPostIndex + 1] : null;
 
+
+var music = false; 
+var character = false;
+var writing = false;
+
+if (layoutProps.postType === "character") {
+  character = true;
+}
+// if (layoutProps.postType === "music") {
+//   music = true;
+// }
+// if (layoutProps.postType === "writing") {
+//   writing = true;
+// }
 ---
 
 <Layout {...layoutProps}>
@@ -122,11 +136,13 @@ const nextPost =
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
     </div>
 
+        { enclosure && <img src={enclosure} alt={title} />}
 
      <article
       id="article"
       class=" text-lg app-prose mx-auto mt-8 max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
     >
+
 
       <Content />
     </article>

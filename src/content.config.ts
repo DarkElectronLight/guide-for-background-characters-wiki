@@ -33,7 +33,7 @@ const blog = defineCollection({
       canonicalURL: z.string().optional(),
       hideEditPost: z.boolean().optional(),
       timezone: z.string().optional(),
-      postType: z.enum(["blog", "music", "art", "writing"]).default("blog"),
+      postType: z.enum(["blog", "info", "character", "other"]).default("blog"),
       enclosure: z.string().optional(),
       ogImage: image().or(z.string()).optional(),
       image: image().or(z.string()).optional(),

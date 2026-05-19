@@ -7,7 +7,7 @@ export const SITE = {
   profile: "https://github.com/DarkElectronLight/",
   lightAndDarkMode: true,
   postPerIndex: 3,
-  postPerPage: 6,
+  postPerPage: 10,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   showBackButton: true, // show back button in post detail
