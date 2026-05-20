@@ -10,6 +10,7 @@ import LinkButton from "./LinkButton.astro";
 import { SITE } from "@/config";
 
 const { pathname } = Astro.url;
+const base = import.meta.env.BASE_URL;
 
 // Remove trailing slash from current pathname if exists
 const currentPath =
@@ -40,9 +41,9 @@ const isActive = (path: string) => {
       class="relative flex w-full items-baseline justify-between bg-background p-4 sm:items-center sm:py-6"
     >
       <a
-        href="/"
+        href=`${base}/`
         class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none">
-        <img src="/logo.jpg" alt="{SITE.title}" width="50px">
+        <img src=`${base}/logo.jpg` alt="{SITE.title}" width="50px">
       </a>
       <nav
         id="nav-menu"
@@ -73,22 +74,22 @@ const isActive = (path: string) => {
             </a>
           </li> -->
           <li class="col-span-2">
-            <a href="/characters" class:list={{ "active-nav": isActive("/characters") }}>
+            <a href=`${base}/characters` class:list={{ "active-nav": isActive("/characters") }}>
               Characters
             </a>
           </li>
           <li class="col-span-2">
-            <a href="/arcs" class:list={{ "active-nav": isActive("/arcs") }}>
+            <a href=`${base}/arcs` class:list={{ "active-nav": isActive("/arcs") }}>
               Arcs
             </a>
           </li>
           <li class="col-span-2">
-            <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
+            <a href=`${base}/tags` class:list={{ "active-nav": isActive("/tags") }}>
               Tags
             </a>
           </li>
           <li class="col-span-2">
-            <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
+            <a href=`${base}/about` class:list={{ "active-nav": isActive("/about") }}>
               About
             </a>
           </li>
