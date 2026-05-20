@@ -29,6 +29,7 @@ const {
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.url);
+const base = import.meta.env.BASE_URL;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -130,7 +131,7 @@ const structuredData = {
 
     <ClientRouter />
 
-    <script is:inline src=${import.meta.env.BASE_URL}"/toggle-theme.js"></script>
+    <script is:inline src=`${base}/toggle-theme.js`></script>
   </head>
   <body>
     <slot />

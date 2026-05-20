@@ -15,7 +15,7 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
-  // site: "https://DarkElectronLight.github.io",
+  // site: "https:///ciradeli.github.io",
   base: "/guide-for-background-characters-wiki",
   integrations: [
     sitemap({

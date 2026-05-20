@@ -1,10 +1,10 @@
 export const SITE = {
-  website: "https://darkelectronlight.github.io", // replace this with your deployed domain
+  website: "https:///ciradeli.github.io", // replace this with your deployed domain
   author: "NA",
   desc: "A Fan Wiki for A Guide to Background Characters",
   title: "guide-for-background-characters-wiki Wiki",
   ogImage: "logo.jpg",
-  profile: "https://github.com/DarkElectronLight/",
+  profile: "https://github.com//ciradeli",
   lightAndDarkMode: true,
   postPerIndex: 3,
   postPerPage: 10,
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/DarkElectronLight/guide-for-background-characters-wiki/edit/master/",
+    url: "https://github.com/ciradeli/guide-for-background-characters-wiki/edit/master/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
