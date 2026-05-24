@@ -11,5 +11,5 @@ tags:
   - class s
   - student
 description: A student of Class S
-enclosure: ../../assets/images/Wu Mingbai.jpg
+enclosure: ../../assets/images/Ai Baozhu.jpg
 ---
