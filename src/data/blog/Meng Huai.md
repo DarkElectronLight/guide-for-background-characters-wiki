@@ -2,7 +2,7 @@
 pubDatetime: 2026-05-19T16:09:14Z
 modDatetime: 
 title: Meng Huai
-postSlug: Meng Huai
+postSlug: Meng-Huai
 featured: false
 draft: false
 tags:

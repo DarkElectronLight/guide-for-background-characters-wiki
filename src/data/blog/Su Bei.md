@@ -2,7 +2,7 @@
 pubDatetime: 2026-05-19T16:09:14Z
 modDatetime: 
 title: Su Bei
-postSlug: su-bei
+postSlug: Su-Bei
 featured: true
 draft: false
 tags:
