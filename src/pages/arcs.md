@@ -78,7 +78,45 @@ Ability User Job Base
 
 ## Life Tech Machinery Co., Ltd
 ## Tri-School Competition
+
+
+Top 10 for the Entertainment Match
+- Huangfu Mingzhe
+- Wu Jin
+- Su Bei
+- Lan Subing
+- Si Zhaohua
+- Jiang Tianming
+- Wu Mingbai
+- Qiao Mu
+- Li Bowen
+- Zuzong
+
+Nightmare People Tribes
+- Mud
+- Gecko
+- Spirit
+- Rock
+- Water
+- Plant
+
+
 ## Missions
+This consists of Longevity Village for the life stone, Su Bei's setup in the cinema in Suqi City, the Mist Beast in Moyun City
+
+### Longevity Village
+Sacrifices: 
+- Grandma Wang
+-- has a son and pregnant daughter
+- Grandpa Zhou
+-- his second daughter has cancer
+- Xiao Chen 
+- Cui Xia / Grandma Chen
+-- son has debts
+
+
+
+
 ## Mole
 ## Ability Exam
 ## World Competition
